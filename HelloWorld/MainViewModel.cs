@@ -39,7 +39,11 @@ namespace HelloWorld
             get => GetProperty<string>();
             set => SetProperty(value);
         }
-
+        public ObjetComplexe MonObjetComplexeSelectionnee
+        {
+            get => GetProperty<ObjetComplexe>();
+            set => SetProperty(value);
+        }
 
         public MainViewModel() : base()
         {

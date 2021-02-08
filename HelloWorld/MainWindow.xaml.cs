@@ -46,6 +46,17 @@ namespace HelloWorld
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             vm.MaChaine = "Un autre texte";
+            if (vm.MonObjetComplexeSelectionnee != null)
+            {
+                foreach(ObjetComplexe objet in vm.MesObjetsComplexes)
+                {
+                    if(objet.Titre == vm.MonObjetComplexeSelectionnee.Titre)
+                    {
+                        objet.Titre = "N'importe quoi";
+                    }
+                }
+            }
+              
         }
 
         private void Ajouter_Chaine(object sender, RoutedEventArgs e)
