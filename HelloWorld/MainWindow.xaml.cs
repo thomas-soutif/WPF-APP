@@ -56,7 +56,7 @@ namespace HelloWorld
         private void Supprimer_Chaine(object sender, RoutedEventArgs e)
         {
             if(!string.IsNullOrEmpty(vm.MaChaineSelectionnee))
-                vm.MaListe.Remove(vm.MaChaineSelectionnee);
+                vm.MaListe.Remove(vm.MaChaineSelectionnee); // Test
         }
     }
 }
